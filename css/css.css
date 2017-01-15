@@ -1,0 +1,41 @@
+*{ margin:0; padding:0;}
+
+body{ font:100% normal Arial, Helvetica, sans-serif;}
+
+form,input,select,textarea{margin:0; padding:0;}
+
+div.box {
+    margin:0 auto;
+    width:500px;
+    position:relative;
+    top:50px;
+}
+div.box label {
+    width:100%;
+    display: block;
+    padding:10px 0 10px 0;
+}
+
+div.box label span {
+    display: block;
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:20px 20px 0 0;
+}
+
+div.box .input_text {
+    padding:13px 13px;
+    width:250px;
+    height:25px;
+}
+div.box .descricao{
+    padding:7px 7px;
+    width:300px;
+    overflow:hidden;
+    height:150px;
+}
+div.box .image{
+  padding: 7px 7px;
+}
