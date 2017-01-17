@@ -1,7 +1,7 @@
 <?php
-namespace bd;
-use \model\Usuario;
-require_once ('databases\ConexaoDAO.php');
+namespace databases;
+use model\Usuario;
+require_once "vendor/autoload.php";
 class functionsDAO{
   //função para colocar os dados do usuario no banco
    public static function CadastrarBD(Usuario $usuario){

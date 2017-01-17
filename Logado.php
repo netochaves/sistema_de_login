@@ -1,13 +1,14 @@
 <?php
-use bd\FunctionsDAO;
-require_once("model\Usuario.php");
-require_once("databases\FunctionsDAO.php");
-$usuario = new model\Usuario;
-$usuario->Cadastrar();
+session_start();
+require_once "vendor/autoload.php";
+
+use databases\FunctionsDAO;
+use model\Usuario;
+$usuario = new Usuario();
 
 if(isset($_SESSION['logado'])){
     echo "bem vindo ".$_SESSION['usuarioNome'];
     echo "<img src='imagems\\".FunctionsDAO::RetornaImg()."'/>";
 }else{
-    header('Location: Login.php');
+    header('Location: index.php');
 }

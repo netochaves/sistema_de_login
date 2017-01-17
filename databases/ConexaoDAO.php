@@ -1,5 +1,5 @@
 <?php
-namespace bd;
+namespace databases;
 class ConexaoDAO{
   public static function ConectaBD(){
     try{

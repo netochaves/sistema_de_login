@@ -1,5 +1,5 @@
 CREATE TABLE `cadastro` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) DEFAULT NULL,
   `senha` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,

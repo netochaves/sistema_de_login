@@ -1,5 +1,5 @@
 <?php
-include_once "model\Usuario.php";
+require_once "vendor/autoload.php";
 $usuario = new model\Usuario();
 $usuario->Cadastrar();
 $nome = isset( $_POST['nome'] ) ? $_POST['nome'] :'';

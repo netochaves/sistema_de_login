@@ -1,5 +1,5 @@
 <?php
-include_once "model\Usuario.php";
+require_once "vendor/autoload.php";
 $usuario = new model\Usuario();
 $usuario->Logar();
 ?>
@@ -25,7 +25,10 @@ $usuario->Logar();
           <input type="checkbox" name="lembrar">
       </label>
       <label for="botao">
-          <input class=""type="submit" name="logar">
+          <input type="submit" name="logar">
+      </label>
+      <label for="cadastrar">
+          <input type="submit" name="cadastro" formaction="cadastro.php" value="fazer cadastro">
       </label>
       </div>
     </form>
